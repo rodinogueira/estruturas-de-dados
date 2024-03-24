@@ -1,0 +1,40 @@
+.tree-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tree-node .value {
+    margin-bottom: 5px;
+    border-radius: 50%; /* Transforma o elemento em um círculo */
+    width: 30px; /* Largura do círculo */
+    height: 30px; /* Altura do círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; /* Borda preta ao redor do círculo */
+}
+
+.tree-node .children {
+    display: flex;
+    flex-direction: row;
+}
+
+.tree-node .children > div {
+    margin: 0 10px;
+}
+
+.tree-node.highlight {
+    background-color: yellow;
+    border-radius: 50%; /* Transforma o nó em um círculo */
+    animation: highlight 1s infinite alternate;
+}
+
+@keyframes highlight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}

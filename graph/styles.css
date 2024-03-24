@@ -33,3 +33,21 @@
 .highlight {
     background-color: yellow;
 }
+
+.visited {
+    background-color: lightblue;
+    animation: visitedAnimation 0.5s ease-in-out alternate;
+}
+
+@keyframes visitedAnimation {
+    from {
+        background-color: lightblue;
+    }
+    to {
+        background-color: #ccc;
+    }
+}
+
+.shortest-path {
+    background-color: yellow;
+}

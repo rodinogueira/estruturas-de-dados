@@ -1,0 +1,13 @@
+.tree-node {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 5px;
+}
+.highlight {
+    background-color: yellow;
+}
+.visited {
+    background-color: lightgreen;
+}

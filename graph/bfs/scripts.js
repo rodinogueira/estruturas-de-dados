@@ -1,10 +1,9 @@
 import Graph from '../graph.js';
+import { myVertices, vertexCoordinates }from '../fake-data.js'
 
 const graphContainer = document.getElementById('graph');
 
 const graph = new Graph();
-
-const myVertices = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W'];
 
 for (let i = 0; i < myVertices.length; i++) {
     graph.addVertex(myVertices[i]);
@@ -35,32 +34,6 @@ graph.addEdge('Q', 'W');
 
 console.log('********* printing graph ***********');
 console.log(graph);
-
-const vertexCoordinates = {
-    A: { x: 50, y: 50 },
-    B: { x: 150, y: 50 },
-    C: { x: 250, y: 50 },
-    D: { x: 350, y: 50 },
-    E: { x: 50, y: 150 },
-    F: { x: 150, y: 150 },
-    G: { x: 250, y: 150 },
-    H: { x: 350, y: 150 },
-    I: { x: 50, y: 250 },
-    J: { x: 150, y: 250 },
-    K: { x: 250, y: 250 },
-    L: { x: 350, y: 250 },
-    M: { x: 50, y: 350 },
-    N: { x: 150, y: 350 },
-    O: { x: 250, y: 350 },
-    P: { x: 350, y: 350 },
-    Q: { x: 50, y: 450 },
-    R: { x: 150, y: 450 },
-    S: { x: 250, y: 450 },
-    T: { x: 350, y: 450 },
-    U: { x: 50, y: 550 },
-    V: { x: 150, y: 550 },
-    W: { x: 250, y: 550 }
-};
 
 console.log('********* printing vertex coordinates ***********');
 console.log(vertexCoordinates);

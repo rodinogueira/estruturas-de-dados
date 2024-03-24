@@ -1,4 +1,4 @@
- // Estrutura da árvore
+// Estrutura da árvore
 export const treeData = {
     value: 1,
     children: [
